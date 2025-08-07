@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../style/register.css" />
+    <script src="../js/register.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <form>
+        <h3>Create Account</h3>
+
+        <label for="username">Username</label>
+        <input type="email" placeholder="Enter your email" id="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Create Password" id="password" required>
+
+        <button id="submit" type="submit">Create Account</button>
+
+        <div class="social">
+            <button id="googleLoginBtn" class="google-btn">Sign up with Google</button>
+
+
+        </div>
+
+        <p class="message">Already have an account? <a href="./login.html">Login Here</a></p>
+    </form>
+    <script type="module" src="js/register.js"></script>
+</body>
+
+</html>

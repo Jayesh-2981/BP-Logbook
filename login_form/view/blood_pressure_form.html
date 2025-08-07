@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blood Pressure Log</title>
+    <link rel="stylesheet" href="../style/blood_pressure_form.css" />
+</head>
+
+<body>
+    <div class="bp-form-container">
+        <form class="bp-form" id="blood_pressure_form">
+            <h2>Blood Pressure Log</h2>
+
+            <div class="input-group">
+                <label for="datetime">Date & Time</label>
+                <input type="datetime-local" id="datetime" required />
+            </div>
+
+            <div class="input-group">
+                <label for="bpHigh">BP High (Systolic)</label>
+                <input type="number" id="bpHigh" placeholder="e.g. 120" required />
+            </div>
+
+            <div class="input-group">
+                <label for="bpLow">BP Low (Diastolic)</label>
+                <input type="number" id="bpLow" placeholder="e.g. 80" required />
+            </div>
+
+            <div class="input-group">
+                <label for="note">Note</label>
+                <textarea id="note" placeholder="Any additional notes..."></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+            <button id="logoutBtn">Logout</button>
+
+        </form>
+    </div>
+
+    <script type="module" src="../js/blood_pressure_form.js" defer></script>
+</body>
+
+</html>
