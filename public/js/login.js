@@ -21,7 +21,7 @@ submit.addEventListener("click", function (event) {
     .then((userCredential) => {
       writeUserData(userCredential.user); // ✅ Save user info
       alert("Login successful!");
-      window.location.href = "./blood_pressure_form.js";
+      window.location.href = "/blood_pressure_form.html";
     })
     .catch((error) => {
       alert("Login failed: " + error.message);
@@ -34,7 +34,7 @@ document.getElementById("googleLoginBtn").addEventListener("click", () => {
     .then((result) => {
       writeUserData(result.user); // ✅ Save user info
       alert("Login successful! Welcome " + result.user.displayName);
-      window.location.href = "blood_pressure_form.html";
+      window.location.href = "/blood_pressure_form.html"; // ✅ Corrected: now redirects to HTML file
     })
     .catch((error) => {
       console.error("Google Login Error:", error);
