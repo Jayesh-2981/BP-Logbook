@@ -1,0 +1,124 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #333;
+}
+
+/* Container */
+.home {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+/* Title */
+.home h1 {
+  color: #4a5568;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.home h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+/* Paragraph styling */
+.home p {
+  color: #4a5568;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* Links */
+.home a {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.home a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+}
+
+.home a:active {
+  transform: translateY(-1px);
+}
+
+/* Logout button */
+#logoutBtn {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  color: #333;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#logoutBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  border-color: #667eea;
+}
+
+#logoutBtn:active {
+  transform: translateY(-1px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .home {
+    padding: 30px 25px;
+    border-radius: 15px;
+    max-width: 100%;
+  }
+
+  .home h1 {
+    font-size: 24px;
+  }
+}

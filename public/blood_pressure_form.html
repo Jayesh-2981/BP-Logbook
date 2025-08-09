@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blood Pressure Log</title>
     <link rel="stylesheet" href="./style/blood_pressure_form.css" />
-
 </head>
 
 <body>
@@ -15,18 +14,23 @@
             <h2>Blood Pressure Log</h2>
 
             <div class="input-group">
-                <label for="datetime">Date & Time</label>
-                <input type="datetime-local" id="datetime" required />
+                <label for="date">Date</label>
+                <input type="date" id="date" required />
+            </div>
+
+            <div class="input-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" required />
             </div>
 
             <div class="input-group">
                 <label for="bpHigh">BP High (Systolic)</label>
-                <input type="number" id="bpHigh" placeholder="e.g. 120" required />
+                <input type="number" id="bpHigh" placeholder="e.g. 120" maxlength="3" inputmode="numeric" required />
             </div>
 
             <div class="input-group">
                 <label for="bpLow">BP Low (Diastolic)</label>
-                <input type="number" id="bpLow" placeholder="e.g. 80" required />
+                <input type="number" id="bpLow" placeholder="e.g. 80" maxlength="3" inputmode="numeric" required />
             </div>
 
             <div class="input-group">
@@ -35,7 +39,6 @@
             </div>
 
             <button type="submit">Submit</button>
-            <button id="logoutBtn">Logout</button>
 
         </form>
     </div>

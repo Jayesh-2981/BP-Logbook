@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Log Form</title>
+    <link rel="stylesheet" href="./style/sugar_form.css">
+    <script type="module" src="./js/sugar_form.js" defer></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Sugar Log Entry</h1>
+        <form id="sugarForm">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="sugarLevel">Sugar Level (mg/dL)</label>
+            <input type="number" id="sugarLevel" name="sugarLevel" placeholder="Enter sugar level" required>
+
+            <label for="note">Note</label>
+            <textarea id="note" name="note" placeholder="Enter any note..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
